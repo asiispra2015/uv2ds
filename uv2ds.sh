@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#ATTENZIONE: mediante ncrename e ncatted neecssario cambiare gli attributi dei file wspeed e wdir creati con CDO
+
 #calcolo di wind speed e direction utilizzando la stessa funzione uv2ds del pacchetto R rWind
 
 #    direction <- atan2(u, v)
