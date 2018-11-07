@@ -1,0 +1,7 @@
+#cambia gli attributi di wind speed e wind direction. Necessario per trasformare i file netCDF in tiff
+ncrename -h -O -v var1,wdir wdir_daily.s.nc 
+ncatted -O -a units,wdir,o,c,"degrees" -a long_name,wdir,o,c,"wind direction" wdir_daily.s.nc 
+
+ncrename -h -O -v u10,wspeed wspeed_daily.s.nc 
+ncatted -O -a units,wspeed,o,c,"m/s" -a long_name,wspeed,o,c,"wind speed" wspeed_daily.s.nc 
+
